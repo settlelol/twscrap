@@ -27,7 +27,7 @@ class Profile():
         self.id = data["data"]["user"]["rest_id"] 
         self.followers = data["data"]["user"]["legacy"]["followers_count"]
         self.likes = data["data"]["user"]["legacy"]["favourites_count"]
-        self.following = data["data"]["user"]["legacy"]["following"]
+        self.following = data["data"]["user"]["legacy"]["friends_count"]
         self.list_count = data["data"]["user"]["legacy"]["listed_count"]
         self.username = data["data"]["user"]["legacy"]["screen_name"]
         self.verified = data["data"]["user"]["legacy"]["verified"]
