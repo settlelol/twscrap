@@ -9,8 +9,7 @@ class Profile():
         self.id = 0
         self.followers = 0
         self.likes = 0
-        self.following = 0
-        self.followingTEST = []
+        self.following = []
         self.list_count = 0
         self.username = ""
         self.verified = False
@@ -28,8 +27,7 @@ class Profile():
         self.id = data["data"]["user"]["rest_id"] 
         self.followers = data["data"]["user"]["legacy"]["followers_count"]
         self.likes = data["data"]["user"]["legacy"]["favourites_count"]
-        self.following = data["data"]["user"]["legacy"]["friends_count"]
-        self.followingTEST = data["data"]["user"]["legacy"]["following"]
+        self.following = data["data"]["user"]["legacy"]["following"]
         self.list_count = data["data"]["user"]["legacy"]["listed_count"]
         self.username = data["data"]["user"]["legacy"]["screen_name"]
         self.verified = data["data"]["user"]["legacy"]["verified"]
